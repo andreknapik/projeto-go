@@ -1,0 +1,100 @@
+<div>
+  <link href="./assets/c_a41.css" rel="stylesheet" />
+  <div class="c_a41-frame">
+    
+    <div class="c_a41-frame1">
+      <img src="./assets/929f6052f1444a4b9036b21adf190000.svg" alt="frame" width="83" height="20"
+        class="c_a41-frame2" />
+    </div>
+
+    <div class="c_a41-component">
+      <div class="c_a41-text">
+        <p class="c_a41-text001">Dados da simulação</p>
+      </div>
+
+      <div class="c_a41-frame3">
+        <div class="c_a41-text002">
+          <p class="c_a41-text003">
+            Planilha de evolução teórica para demonstração dos fluxos referentes
+            aos pagamentos e recebimentos considerados no cálculo do Custo
+            Efetivo Total - CET nas condições vigentes na data da simulação. Os
+            cálculos apresentados na planilha não consideram a atualização do
+            saldo devedor pelo indexador escolhido.
+          </p>
+        </div>
+      </div>
+
+      <div class="c_a41-frame4">
+        <div class="c_a41-text004">
+          <p class="c_a41-text005">Instituição financeira:</p>
+        </div>
+        <div class="c_a41-text006">
+          <p class="c_a41-text007">INSTITUIÇÃO FINANCEIRA</p>
+        </div>
+        <div class="c_a41-text008">
+          <p class="c_a41-text009">Produto:</p>
+        </div>
+        <div class="c_a41-text010">
+          <p class="c_a41-text011">PRODUTO</p>
+        </div>
+        <div class="c_a41-text012">
+          <p class="c_a41-text013">Categoria:</p>
+        </div>
+        <div class="c_a41-text014">
+          <p class="c_a41-text015">CATEGORIA</p>
+        </div>
+      </div>
+    </div>
+
+    <table class="c_a41-text017">
+      <thead>
+        <tr>
+          <th>Data da Parcela</th>
+          <th>Parcela</th>
+          <th>Juros</th>
+          <th>Amortização</th>
+          <th>DFI</th>
+          <th>MPI</th>
+          <th>TAC</th>
+          <th>IOF Mensal</th>
+          <th>IOF Diário</th>
+          <th>Prestação</th>
+          <th>Saldo devedor</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        {{range .Parcelas}}
+        <tr>
+          <td class="c_a41-instance012">{{.DataParcela}}</td>
+          <td>{{.Mes}}</td>
+          <td>R$ {{printf "%.2f" .Juros}}</td>
+          <td>R$ {{printf "%.2f" .Amortizacao}}</td>
+          <td>R$ {{printf "%.2f" .Dfi}}</td>
+          <td>R$ {{printf "%.2f" .Mip}}</td>
+          <td>R$ {{printf "%.2f" .TAC}}</td>
+          <td>R$ {{printf "%.2f" .IOFMensal}}</td>
+          <td>R$ {{printf "%.2f" .IOFAdicional}}</td>
+          <td>R$ {{printf "%.2f" .Prestacao}}</td>
+          <td>R$ {{printf "%.2f" .Saldo}}</td>
+        </tr>
+        {{end}}
+      </tbody>
+    </table>
+  </div>
+
+
+  <div class="c_a41-frame5">
+    <img src="./assets/40c36a1df5e68893c9ead60d67cd5423.svg" alt="frame" width="83" height="20" class="c_a41-frame6" />
+    <div class="c_a41-frame7">
+      <div class="c_a41-text346">
+        <p class="c_a41-text347">www.ebantech.com.br</p>
+        <p class="c_a41-text348"><br /></p>
+        <p class="c_a41-text349">Av. Dra. Ruth Cardoso, 8501 - 17º Andar</p>
+        <p class="c_a41-text350">Pinheiros - São Paulo - SP</p>
+        <p class="c_a41-text351">CEP: 05425-070</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
